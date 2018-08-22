@@ -12,6 +12,9 @@ public class Main extends PluginBase {
             if (args.length > 1) {
                 this.getServer().getLogger().notice("\u00A7c" + sender.getName() + " reported player " + args[0] + "\u00A77: " + String.join(" ", args));
                 sender.sendMessage("\u00A7aSuccessfully reported player \u00A7c" + args[0]);
+                for (Player p : this.getServer().getOnlinePlayers().values()) {
+                    if (p.isOp() || p.hasPermission("report.see")) p.sendMessage("\u00A7c" + sender.getName() + " reported player " + args[0] + "\u00A77: " + String.join(" ", args));
+                }
                 return true;
             }
             return false;

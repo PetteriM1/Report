@@ -1,0 +1,15 @@
+name: Report
+version: "1.0"
+api: ["1.0.0"]
+author: PetteriM1
+main: idk.plugin.report.Main
+
+commands:
+  report:
+    description: Report player
+    usage: "/report <player> <reason>"
+    permission: report.use
+permissions:
+  report.use:
+    description: "Allows player to use /report command"
+    default: true

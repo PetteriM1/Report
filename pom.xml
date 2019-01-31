@@ -6,7 +6,7 @@
 
     <groupId>idk.plugin.report</groupId>
     <artifactId>Report</artifactId>
-    <version>1.1</version>
+    <version>1.2</version>
     <build>
         <defaultGoal>install</defaultGoal>
         <sourceDirectory>${basedir}/src/main/java</sourceDirectory>
@@ -27,6 +27,14 @@
                 <directory>${basedir}/src/main/resources/</directory>
                 <includes>
                     <include>plugin.yml</include>
+                </includes>
+            </resource>
+            <resource>
+                <targetPath>.</targetPath>
+                <filtering>true</filtering>
+                <directory>${basedir}/src/main/resources/</directory>
+                <includes>
+                    <include>reports.yml</include>
                 </includes>
             </resource>
         </resources>

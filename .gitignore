@@ -13,3 +13,6 @@ hs_err_pid*
 .project
 target/
 .DS_Store
+.idea
+*.iml
+.factorypath

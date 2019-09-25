@@ -26,6 +26,10 @@ public class Main extends PluginBase {
                     sender.sendMessage("\u00A7cUnknown player: " + args[0]);
                     return true;
                 }
+                if (badGuy.equals(sender)) {
+                    sender.sendMessage("\u00A7cYou can't report yourself");
+                    return true;
+                }
                 String reason = String.join(" ", args).replaceFirst(args[0] + " ", "");
                 this.getServer().getLogger().notice("\u00A7c" + sender.getName() + " reported player " + badGuy.getName() + "\u00A77: " + reason);
                 getServer().getLogger().notice("\u00A7c" + sender.getName() + " reported player " + badGuy.getName() + "\u00A77: " + reason);

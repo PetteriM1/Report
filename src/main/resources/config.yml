@@ -1,0 +1,11 @@
+# Send reports to Discord console
+# Requires DiscordChat plugin with Discord console enabled
+discordChatConsoleIntegration: true
+
+# Translations
+msg_unknownplayer: "§cUnknown player: "
+msg_cantreport: "§cYou can't report yourself"
+msg_reportedsuccessfully: "§aSuccessfully reported player §c"
+msg_whoreported: " reported player "
+msg_noreports: "No any reports"
+msg_reports: "Reports"

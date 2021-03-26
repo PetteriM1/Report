@@ -6,7 +6,7 @@
 
     <groupId>idk.plugin.report</groupId>
     <artifactId>Report</artifactId>
-    <version>1.2.1</version>
+    <version>1.3.0</version>
     <build>
         <defaultGoal>install</defaultGoal>
         <sourceDirectory>${basedir}/src/main/java</sourceDirectory>
@@ -34,7 +34,7 @@
                 <filtering>true</filtering>
                 <directory>${basedir}/src/main/resources/</directory>
                 <includes>
-                    <include>reports.yml</include>
+                    <include>*.yml</include>
                 </includes>
             </resource>
         </resources>
@@ -52,5 +52,16 @@
             <version>1.0-SNAPSHOT</version>
             <scope>provided</scope>
         </dependency>
+        <dependency>
+            <groupId>me.petterim1.discordchat</groupId>
+            <artifactId>DiscordChat</artifactId>
+            <version>2.0</version>
+            <optional>false</optional>
+            <scope>system</scope>
+            <systemPath>${basedir}/DiscordChat-2.0.jar</systemPath>
+        </dependency>
     </dependencies>
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
 </project>

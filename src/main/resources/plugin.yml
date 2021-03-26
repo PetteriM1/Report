@@ -2,15 +2,16 @@ name: Report
 version: "${pom.version}"
 api: ["1.0.0"]
 author: PetteriM1
-main: idk.plugin.report.Main
+main: me.petterim1.report.Plugin
+softdepend: ["DiscordChat"]
 
 commands:
   report:
-    description: Report player
+    description: Report a player
     usage: "/report <player> <reason>"
     permission: report.use
   reports:
-    description: Show reports
+    description: Show all reports
     usage: "/reports"
     permission: report.see
 permissions:
